@@ -2,12 +2,21 @@ import java.util.Arrays;
 import java.util.Random;
 
 import SortingAlgorithms.*;
+import DataStructures.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] a = randomArrayGenerator(10);
+//        int[] a = randomArrayGenerator(10);
+        ArrayStack as = new ArrayStack(1);
+        as.push(10);
+        as.printStack();
 
+        DynamicArrayStack ds = new DynamicArrayStack(1);
+        ds.push(10);
+        ds.push(10);
+        ds.push(10);
+        ds.printStack();
     }
 
     private static int[] randomArrayGenerator(int size){

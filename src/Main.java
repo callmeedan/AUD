@@ -4,9 +4,8 @@ import java.util.Arrays;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] a1 = {5,8,6,3,1,2,7};
-        int[] a2 = {14,52,26,73,134,20,4,59,23,14,254,36};
-
-
-        }
+        int[] test = {123, 245, 23, 26, 134, 634, 118, 611, 148};
+        Sort.radixSort(test, 3, 10);
+        System.out.println(Arrays.toString(test));
     }
+}

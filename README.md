@@ -1,1 +1,1 @@
-Đây là một Project được tạo ra nhằm mục đích luyện tập và nâng cao hiểu biết về Sorting Algorithm và Data Structures.
+This is a Project created for the purpose of practicing and improving understanding of Sorting Algorithm and Data Structures.

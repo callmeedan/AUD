@@ -1,21 +1,14 @@
-package DataStructures;
+package DataStructures.Stack;
 
-public class DynamicArrayStack implements Stack {
+public class ArrayStack implements Stack {
     private int[] Stack;
-    private int capacity;
+    private final int capacity;
     private int top;
 
-    public DynamicArrayStack(int capacity) {
+    public ArrayStack(int capacity) {
         this.capacity = capacity;
         Stack = new int[capacity];
         top = -1;
-    }
-
-    public void resize(int newCapacity) {
-        int[] newStack = new int[newCapacity];
-        System.arraycopy(Stack, 0, newStack, 0, Math.min(Stack.length, newCapacity));
-        Stack = newStack;
-        capacity = newCapacity;
     }
 
     @Override
@@ -29,22 +22,23 @@ public class DynamicArrayStack implements Stack {
     }
 
     @Override
-    public void push(int value) {
+    public void push(int value) throws Exception {
         if (isFull()) {
-            resize(capacity * 2);
+            throw new Exception("overflow");
         }
-        Stack[++top] = value;
+        else {
+            Stack[++top] = value;
+        }
     }
 
     @Override
     public int pop() throws Exception {
-        if (isEmpty()){
+        if (isEmpty()) {
             throw new Exception("underflow");
         }
-        if (top < capacity / 2 && capacity > 2) {
-            resize(capacity / 2);
+        else {
+            return Stack[top--];
         }
-        return Stack[top--];
     }
 
     @Override

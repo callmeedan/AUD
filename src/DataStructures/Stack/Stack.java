@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.Stack;
 
 public interface Stack {
     boolean isEmpty();

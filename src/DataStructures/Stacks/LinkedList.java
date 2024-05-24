@@ -1,4 +1,4 @@
-package DataStructures.Stack;
+package DataStructures.Stacks;
 
 class Node{
     int key;

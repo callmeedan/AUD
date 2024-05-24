@@ -1,4 +1,4 @@
-package DataStructures.Queue;
+package DataStructures.Queues;
 
 public class ArrayQueue {
     private int[] queue;

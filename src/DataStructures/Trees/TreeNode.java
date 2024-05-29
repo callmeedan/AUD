@@ -5,6 +5,7 @@ public class TreeNode {
     TreeNode left;
     TreeNode right;
     TreeNode parent;
+    NodeColor color;
 
     public TreeNode(int val) {
         this.val = val;

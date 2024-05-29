@@ -1,7 +1,7 @@
 package DataStructures.Trees;
 
 public class BinarySearchTree implements Tree {
-    private TreeNode root;
+    protected TreeNode root;
     public BinarySearchTree() {
         this.root = null;
     }

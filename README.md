@@ -1,1 +1,1 @@
-This is a Project created for the purpose of practicing Sorting Algorithm and Data Structures.
+Some sorting algorithm and data structures.
